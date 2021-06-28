@@ -2,20 +2,24 @@ import { LitElement, html } from 'lit-element';
 
 export class SellItem extends LitElement {
 
-  static get styles() {
-    return [css`
-      h1 {
-        color: blue;
-      }
-    `];
-  }
-
   static get properties() {
     return {
-      name: {type: String},
-      img: {type: String},
-      new_price: {type: String},
-      old_price: {type: String}
+      name: {
+        type: String,
+        attrName: 'name'
+      },
+      img: {
+        type: String,
+        attrName: 'img'
+      },
+      new_price: {
+        type: String,
+        attrName: 'new_price'
+      },
+      old_price: {
+        type: String,
+        attrName: 'old_price'
+      }
     }
   }
 
@@ -30,4 +34,5 @@ export class SellItem extends LitElement {
     `;
   }
 }
-customElements.define('sell-item', SellItem);
+
+//customElements.define('sell-item', SellItem);
