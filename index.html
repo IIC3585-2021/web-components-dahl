@@ -3,11 +3,56 @@
     <head>
         <meta charset="utf-8">
         <title>Web components</title>
+        <link rel="stylesheet" href="index.css"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     </head>
     <body>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
         <script src='./app.js'></script>
-        <sell-item name="Computador" img= "https://home.ripley.cl/store/Attachment/WOP/D113/2000383032429/2000383032429_2.jpg" old_price=4000 new_price=3000></sell-item>
-        <sell-item name="Computador2" img= "https://home.ripley.cl/store/Attachment/WOP/D113/2000383032429/2000383032429_2.jpg" old_price=10000 new_price=2000></sell-item>
+        <div class="container">
+            <h1>Web Components App</h1>
+            <h5>¡Mundo Computación!</h5>
+            <style>
+                h5{
+                    font-style: italic;
+                    color:purple;
+                    font-weight: bold;
+                }
+            </style>
+            <div class="row">
+        <div class="card-group">
+
+                <sell-item name="HP LAPTOP 15-EF1018LA / AMD RYZEN™ 5 / 8GB RAM / 256GB SSD / AMD RADEON GRAPHICS / 15.6" img= "https://home.ripley.cl/store/Attachment/WOP/D113/2000383107424/2000383107424-1.jpg" >
+                    <div slot="new_price">$599.990</div>
+                    <div slot="old_price">Normal: <del>$549.990</del></div>
+                </sell-item>
+                <sell-item name="NOTEBOOK HP 14-CK2091LA / INTEL® CORE™ I3 / 4GB RAM / 128GB SSD / INTEL UHD GRAPHICS / 14”" img= "https://home.ripley.cl/store/Attachment/WOP/D113/2000381074056/2000381074056-1.jpg">
+                    <div slot="new_price">$469.990</div>
+                    <div slot="old_price">Normal: <del>$399.990</del></div>
+                </sell-item> 
+                <sell-item name="ASUS X415EA / INTEL® CORE™ I7 / 8GB RAM / 512GB SSD / INTEL UHD GRAPHICS / 14" img="https://home.ripley.cl/store/Attachment/WOP/D113/2000382093698/2000382093698-1.jpg">
+                    <div slot="new_price">$999.990</div>
+                    <div slot="old_price">Normal: <del>$829.990</del></div>
+                </sell-item>
+                <sell-item name="LENOVO IDEAPAD S340 / INTEL® CORE™ I5 / 4GB RAM / 256GB SSD / 14" img= "https://home.ripley.cl/store/Attachment/WOP/D113/2000379795482/2000379795482-2.jpg">
+                    <div slot="new_price">$559.990</div>
+                    <div slot="old_price">Normal: <del>$499.990</del></div>
+                </sell-item> 
+                <sell-item name="LENOVO IDEAPAD S540 / INTEL® CORE™ I5 / 8GB RAM / 512GB SSD / INTEGRADA / 13.3" img= "https://home.ripley.cl/store/Attachment/WOP/D113/2000382321111/2000382321111-2.jpg">
+                    <div slot="new_price">$849.990</div>
+                    <div slot="old_price">Normal: <del>$739.990</del></div>
+                </sell-item> 
+                <sell-item name="HP PAVILION X360 CONVERTIBLE 14-DY0002LA / INTEL® PENTIUM™GOLD / 4GB RAM / 256GB SSD / INTEL UHD GRAPHICS / 14" img= "https://home.ripley.cl/store/Attachment/WOP/D113/2000383803371/2000383803371-2.jpg" >
+                    <div slot="new_price">$499.990</div>
+                    <div slot="old_price">Normal: <del>$469.990</del></div>
+                </sell-item>
+               
+            </div>
+            </div>
+        </div>
+        
     </body>
 
 </html>
