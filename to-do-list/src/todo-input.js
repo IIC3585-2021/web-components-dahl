@@ -21,7 +21,7 @@ templateTodoInput.innerHTML = `
             line-height: 1.4em;
             border: 0;
             outline: none;
-            color: inherit;
+            color: #ffff;
             padding: 6px;
             border: 1px solid #CCC;
             box-shadow: inset 0 -1px 5px 0 rgba(0, 0, 0, 0.2);
