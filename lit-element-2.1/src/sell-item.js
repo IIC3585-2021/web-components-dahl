@@ -1,6 +1,6 @@
 import { LitElement, html } from 'lit-element';
 
-export class SellItem extends LitElement {
+export default class SellItem extends LitElement {
 
   static get properties() {
     return {
@@ -34,5 +34,3 @@ export class SellItem extends LitElement {
     `;
   }
 }
-
-//customElements.define('sell-item', SellItem);

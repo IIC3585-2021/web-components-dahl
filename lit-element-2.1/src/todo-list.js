@@ -1,6 +1,6 @@
 import { LitElement, html } from 'lit-element';
 
-export default class MyTodo extends LitElement {
+export default class TodoList extends LitElement {
     constructor() {
         super();
         this.list = [
@@ -32,29 +32,6 @@ export default class MyTodo extends LitElement {
 
     render() {
         return html`
-            <style>
-                h1 {
-                    font-size: 70px;
-                    line-height: 70px;
-                    font-weight: 100;
-                    text-align: center;
-                    color: rgba(175, 47, 47, 0.15);
-                }
-
-                section {
-                    background: #fff;
-                    margin: 30px 0 40px 0;
-                    position: relative;
-                    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
-                }
-
-                #list-container {
-                    margin: 0;
-                    padding: 0;
-                    list-style: none;
-                    border-top: 1px solid #e6e6e6;
-                }
-            </style>
             <h1>Todos Lit Element</h1>
             <section>
                 <todo-input @submit="${(e) => this.addItem(e, e.detail)}"></todo-input>
