@@ -1,0 +1,24 @@
+{
+  "name": "web-components-dahl",
+  "version": "1.0.0",
+  "main": "app.js",
+  "dependencies": {
+    "lit-element": "^2.5.1",
+    "polymer-cli": "^1.9.11"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IIC3585-2021/web-components-dahl.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IIC3585-2021/web-components-dahl/issues"
+  },
+  "homepage": "https://github.com/IIC3585-2021/web-components-dahl#readme",
+  "description": ""
+}
