@@ -34,9 +34,9 @@ class SellItem extends HTMLElement {
         
     }
 
-    // DisconnectedCallback: ej para cuando se quite al child 
-    // attributeChangedCallback (nombre, viejoValor, nuevoValor)
-    // static get observedAttributes(){ return ['xx']}
+  // DisconnectedCallback: ej para cuando se quite al child 
+  // attributeChangedCallback (nombre, viejoValor, nuevoValor)
+  // static get observedAttributes(){ return ['xx']}
  }
 
 window.customElements.define('sell-item', SellItem)
