@@ -16,7 +16,13 @@
     <div class="container">
         <h1>Web Components App</h1>
         <h5>¡Mundo Computación!</h5>
-
+        <style>
+            h5{
+                font-style: italic;
+                color:purple;
+                font-weight: bold;
+            }
+        </style>
         <div class="row">
             <div class="card-group">
                 <sell-item
@@ -63,12 +69,15 @@
                 </sell-item>
             </div>
         </div>
+        <div class="row">
+            <div class="card-group">
+                <todo-list>
+                    <todo-input></todo-input>
+                    <todo-item></todo-item>
+                </todo-list>
+            </div>
+        </div>
     </div>
-    <todo-list>
-        <todo-input></todo-input>
-        <todo-item></todo-item>
-    </todo-list>
-    
     <script src="./dist/main.js"></script>
 </body>
 

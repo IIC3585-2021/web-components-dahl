@@ -45,8 +45,9 @@ export default class MyTodo extends HTMLElement {
         this._root = this.attachShadow({ 'mode': 'open' });
         // initial state
         this._list = [
-            { text: 'my initial todo', checked: false },
-            { text: 'Learn about Web Components', checked: true }
+            { text: 'Primera', checked: false },
+            { text: 'Segunda', checked: false },
+            { text: 'Tercera', checked: true }
         ];
     }
 
@@ -93,5 +94,3 @@ export default class MyTodo extends HTMLElement {
         });
     }
 }
-
-

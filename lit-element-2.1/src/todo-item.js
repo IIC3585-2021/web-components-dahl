@@ -1,4 +1,4 @@
-import { LitElement, css, html } from 'lit-element';
+import { LitElement, html } from 'lit-element';
 
 export default class TodoItem extends LitElement {
 
@@ -33,17 +33,20 @@ export default class TodoItem extends LitElement {
         this.dispatchEvent(new CustomEvent('toggle', { detail: this.index }));
     }
 
-    static get styles() {
-        return css`
+    render() {
+        return html`
+
+            <style>
             :host {
                 display: block;
             }
         
             li.item {
-                font-size: 24px;
+                font-size: 36px;
                 display: block;
                 position: relative;
                 border-bottom: 1px solid #ededed;
+                background-color: green;
             }
         
             li.item input {
@@ -129,11 +132,8 @@ export default class TodoItem extends LitElement {
                 cursor:pointer;
                 color: red; 
             }
-        `;
-      }
+            </style>
 
-    render() {
-        return html`
             <li>
                 <input type="checkbox" .checked=${this.checked} @click="${this.onToggle}">
                 <label>${this.text}</label>

@@ -36,13 +36,14 @@ export default class SellItem extends LitElement {
 
   render() {
     return html`
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
       <div class="col">
         <div class="card" style="width: 18rem;">
             <img src="${this.img}" class="card-img-top" alt="Card image cap">
             <div class="card-body">
                 <h5 class="card-title">${this.name}</h5>
                 <p class="card-text">${this.new_price}</p>
-                <p class="card-text">Normal: ${this.old_price}</p>
+                <p class="card-text">Normal: <del>${this.old_price}</del></p>
                 <i class="bi bi-star-fill"></i>
             </div>
         </div>

@@ -14,11 +14,12 @@ export default class TodoInput extends LitElement {
         $input.value = '';
     }
 
-    static get styles() {
-        return css`
+    render() {
+        return html`
+        <style>
             #new-todo-form {
                 position: relative;
-                font-size: 24px;
+                font-size: 36px;
                 border-bottom: 1px solid #ededed;
                 padding: 0 0 20px 0;
             }
@@ -42,11 +43,7 @@ export default class TodoInput extends LitElement {
                 box-shadow: inset 0 -1px 5px 0 rgba(0, 0, 0, 0.2);
                 box-sizing: border-box;
             }
-        `;
-      }
-
-    render() {
-        return html`
+        </style>
         <form @submit="${this.onSubmit}">
             <input type="text" placeholder="What needs to be done?" />
         </form>
