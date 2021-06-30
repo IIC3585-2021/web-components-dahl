@@ -10,6 +10,10 @@ export default class SellItem extends LitElement {
       .col{
           display: inline-block;
       }
+      .card-text-new {
+        color: red;
+        font-size: 24px;
+    }
     `
   }
 
@@ -42,7 +46,7 @@ export default class SellItem extends LitElement {
             <img src="${this.img}" class="card-img-top" alt="Card image cap">
             <div class="card-body">
                 <h5 class="card-title">${this.name}</h5>
-                <p class="card-text">${this.new_price}</p>
+                <p class="card-text-new">${this.new_price}</p>
                 <p class="card-text">Normal: <del>${this.old_price}</del></p>
                 <i class="bi bi-star-fill"></i>
             </div>

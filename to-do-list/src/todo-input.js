@@ -1,5 +1,5 @@
 const templateTodoInput = document.createElement('template');
-templateTodoInput.innerHTML = `
+templateTodoInput.innerHTML = /*html*/`
     <style>
         #new-todo-form {
             position: relative;
@@ -29,7 +29,7 @@ templateTodoInput.innerHTML = `
         }
     </style>
     <form id="new-todo-form">
-        <input id="new-todo" type="text" placeholder="Write new task" />
+        <input id="new-todo" type="text" placeholder="Añade un nuevo item" />
     </form>
 `;
 

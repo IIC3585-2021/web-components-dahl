@@ -1,5 +1,5 @@
 const templateTodoItem = document.createElement('template');
-templateTodoItem.innerHTML = `
+templateTodoItem.innerHTML = /*html*/`
     <style>
       :host {
         display: block;

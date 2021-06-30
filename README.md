@@ -5,9 +5,9 @@
 
 y abrir `to-do-list/index.html` en el browser
 
-* En lit-element-2.1
+* En lit-element
 
 > npm install
 > npm run start
 
-y abrir `lit-element-2.1/index.html` en el browser
+y abrir `lit-element/index.html` en el browser

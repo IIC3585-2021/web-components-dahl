@@ -1,4 +1,4 @@
-import { LitElement, html } from 'lit-element';
+import { LitElement, css, html } from 'lit-element';
 
 export default class TodoList extends LitElement {
     constructor() {
@@ -12,6 +12,30 @@ export default class TodoList extends LitElement {
         this.removeItem = this.removeItem.bind(this);
         this.toggleItem = this.toggleItem.bind(this);
     }
+
+    static get styles() {
+        return css`
+        h1 {
+            font-size: 35px;
+            line-height: 35px;
+            font-weight: 100;
+            text-align: center;
+            color: #CC5CF9;
+        }
+        section {
+            background: #fff;
+            margin: 30px 0 40px 0;
+            position: relative;
+            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
+        }
+        #list-container {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            border-top: 1px solid #e6e6e6;
+        }
+        `
+      }
 
     addItem(e, text) {
         this.list = [...this.list, { text, checked: false, }];
@@ -33,38 +57,7 @@ export default class TodoList extends LitElement {
 
     render() {
         return html`
-            <style>
-                h1 {
-                    font-size: 100px;
-                    font-weight: 100;
-                    text-align: center;
-                    color: #ffff;
-                }
-
-                section {
-                    background: #f5f5f5;
-                    margin: 30px 0 40px 0;
-                    position: relative;
-                    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
-                }
-
-                #list-container {
-                    margin: 0 0 0 0;
-                    padding-top: 0;
-                    list-style: none;
-                    border-top: 1px solid #e6e6e6;
-                }
-
-                h3 {
-                    font-size: 40px;
-                    font-weight: 100;
-                    text-align: left;
-                    margin: 30px 0;
-                    color: #ffff;
-                }
-            </style>
-
-            <h1>Todos Lit Element</h1>
+            <h1>To Do List con Lit-Element</h1>
             <section>
                 <todo-input @submit="${(e) => this.addItem(e, e.detail)}"></todo-input>
                 ${this.list.map((item, index) => html`

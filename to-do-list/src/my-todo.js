@@ -1,5 +1,5 @@
 const templateTodo = document.createElement('template');
-templateTodo.innerHTML = `
+templateTodo.innerHTML = /*html*/`
     <style>
         h1 {
             font-size: 100px;
